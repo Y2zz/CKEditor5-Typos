@@ -1,0 +1,51 @@
+{
+  "name": "ckeditor5-typos",
+  "version": "0.0.1",
+  "description": "Typos check plugin for CKEditor 5",
+  "scripts": {
+    "start": "./node_modules/.bin/webpack --mode development -w",
+    "build": "./node_modules/.bin/webpack --mode development",
+    "test": "concurrently --kill-others --success \"first\" \"node --max_old_space_size=4096 node_modules/@ckeditor/ckeditor5-dev-tests/bin/test.js -c --files=ckeditor5\" \"http-server -c-0 --cors -p 3000 -s\""
+  },
+  "author": "Y2zz",
+  "license": "MIT",
+  "files": [
+    "lang",
+    "src",
+    "theme"
+  ],
+  "keywords": [
+    "ckeditor 5",
+    "typos"
+  ],
+  "devDependencies": {
+    "@ckeditor/ckeditor5-dev-tests": "^24.4.2",
+    "@ckeditor/ckeditor5-inspector": "^2.2.2",
+    "@types/ckeditor__ckeditor5-core": "^27.0.0",
+    "@types/ckeditor__ckeditor5-engine": "^11.0.5",
+    "@types/ckeditor__ckeditor5-ui": "^27.0.0",
+    "@types/ckeditor__ckeditor5-utils": "^27.0.0",
+    "concurrently": "^5.0.2",
+    "eslint": "^6.8.0",
+    "http-server": "^0.12.1",
+    "postcss-loader": "^3.0.0",
+    "raw-loader": "^3.1.0",
+    "style-loader": "^1.1.1",
+    "webpack": "^4.41.4",
+    "webpack-cli": "^3.3.10"
+  },
+  "dependencies": {
+    "@ckeditor/ckeditor5-basic-styles": "^27.1.0",
+    "@ckeditor/ckeditor5-core": "^27.1.0",
+    "@ckeditor/ckeditor5-dev-utils": "^24.4.2",
+    "@ckeditor/ckeditor5-editor-classic": "^27.1.0",
+    "@ckeditor/ckeditor5-engine": "^27.1.0",
+    "@ckeditor/ckeditor5-essentials": "^27.1.0",
+    "@ckeditor/ckeditor5-heading": "^27.1.0",
+    "@ckeditor/ckeditor5-image": "^27.1.0",
+    "@ckeditor/ckeditor5-list": "^27.1.0",
+    "@ckeditor/ckeditor5-paragraph": "^27.1.0",
+    "@ckeditor/ckeditor5-theme-lark": "^27.1.0",
+    "@ckeditor/ckeditor5-ui": "^27.1.0"
+  }
+}
