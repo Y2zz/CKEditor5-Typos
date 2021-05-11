@@ -18,6 +18,10 @@
     "ckeditor 5",
     "typos"
   ],
+  "publishConfig": {
+    "registry": "https://registry.npmjs.org",
+    "access": "public"
+  },
   "devDependencies": {
     "@ckeditor/ckeditor5-dev-tests": "^24.4.2",
     "@ckeditor/ckeditor5-inspector": "^2.2.2",
